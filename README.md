@@ -23,7 +23,7 @@ sudo su
 - Clone your application's code repository onto the EC2 instance:
     
     ```bash
-    git clone https://github.com/vijaygiduthuri/swiggy.git
+    git clone https://github.com/Sunilmargale/Swiggy-CICD-project.git
     ```
     
 # **Step 3: Install Jenkins on EC2-Instance using shell script:**
