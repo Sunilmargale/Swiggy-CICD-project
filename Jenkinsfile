@@ -58,7 +58,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred') {
-                        sh "docker tag starbucks sunilmargale/swiggy:latest "
+                        sh "docker tag swiggy sunilmargale/swiggy:latest "
                         sh "docker push sunilmargale/swiggy:latest "
                     }
                 }
@@ -77,7 +77,7 @@ pipeline {
         }
         stage ("Deploy to Conatiner") {
             steps {
-                sh 'docker run -d --name starbucks -p 3000:3000 sunilmargale/swiggy:latest'
+                sh 'docker run -d --name swiggy -p 3000:3000 sunilmargale/swiggy:latest'
             }
         }
     }
